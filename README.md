@@ -1,1 +1,3 @@
-# sister_19_05111640000088
+# Sistem Terdistribusi 2019
+## Khawari Muhammad Dzakwan
+### 05111640000088
