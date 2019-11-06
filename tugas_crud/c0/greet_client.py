@@ -1,19 +1,19 @@
 import Pyro4
 
 def test_no_ns():
-    uri = "PYRO:obj_27d7c59497c44c688319f7d8a4a95935@localhost:40549"
+    uri = "PYRO:obj_27d7c59497c44c688319f7d8a4a95935@10.151.252.185:40549"
     gserver = Pyro4.Proxy(uri)
     print(gserver.get_greet('ronaldo'))
 
 def test_with_ns():
-    uri = "PYRONAME:greetserver@localhost:7777"
+    uri = "PYRONAME:greetserver@10.151.252.185:7777"
     gserver = Pyro4.Proxy(uri)
     print(gserver.get_greet('ronaldo'))
 
 def send(command=None):
-    uri = "PYRONAME:greetserver@localhost:7777"
+    uri = "PYRONAME:greetserver@10.151.252.185:7777"
     gserver = Pyro4.Proxy(uri)
-    print(gserver.send(command))
+    print(gserver.perintah(command))
 
 
 if __name__=='__main__':
